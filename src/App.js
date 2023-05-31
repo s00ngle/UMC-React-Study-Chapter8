@@ -7,12 +7,12 @@ const pageNo = 1;
 const numOfRows = 1000;
 const serviceKey = process.env.REACT_APP_API_KEY;
 
-const filterName = ""; // 지역 이름 입력
-
 const URL = `https://apis.data.go.kr/B552584/UlfptcaAlarmInqireSvc/getUlfptcaAlarmInfo?year=${year}&pageNo=${pageNo}&numOfRows=${numOfRows}&returnType=json&serviceKey=${serviceKey}`;
 
 function App() {
     const [data, setData] = useState([]);
+    const [filterName, setFilterName] = useState("");
+    const [filteredData, setFilteredData] = useState([]);
 
     const fetchData = async () => {
         try {
@@ -20,13 +20,7 @@ function App() {
                 .get(URL)
                 .then((res) => {
                     setData(res.data.response.body.items);
-                    setData(
-                        filterName === ""
-                            ? res.data.response.body.items
-                            : res.data.response.body.items.filter(
-                                  (item) => item.districtName === filterName
-                              )
-                    );
+                    setFilteredData(res.data.response.body.items);
                 })
                 .catch((err) => {
                     console.log(err);
@@ -37,16 +31,33 @@ function App() {
     };
 
     useEffect(() => {
-        console.log("key: ", serviceKey);
         fetchData();
     }, []);
+
+    const setFilter = (e) => {
+        setFilterName(e.target.value);
+        const filtered = data.filter((item) => {
+            return item.districtName.includes(e.target.value);
+        });
+        setFilteredData(filtered);
+    };
 
     return (
         <div className="App">
             <h1>API Test</h1>
-            {/* show all items in datas */}
+            <div className="input-wrapper">
+                <input
+                    type="text"
+                    value={filterName}
+                    onChange={(e) => {
+                        setFilter(e);
+                    }}
+                    placeholder="Enter filter name"
+                />
+            </div>
+
             <div style={{ display: "flex", flexWrap: "wrap" }}>
-                {data.map((item, index) => (
+                {filteredData.map((item, index) => (
                     <div className="item" key={index} style={{ width: "15%" }}>
                         <div className="districtName">
                             지역 : {item.districtName}

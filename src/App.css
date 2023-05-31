@@ -18,3 +18,9 @@ h1 {
 hr {
     border: 1px solid #ccc;
 }
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
