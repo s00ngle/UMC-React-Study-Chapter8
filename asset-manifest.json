@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/UMC-React-Study-Chapter3/static/css/main.5ad930cb.css",
+    "main.js": "/UMC-React-Study-Chapter3/static/js/main.0f85ef42.js",
+    "index.html": "/UMC-React-Study-Chapter3/index.html",
+    "main.5ad930cb.css.map": "/UMC-React-Study-Chapter3/static/css/main.5ad930cb.css.map",
+    "main.0f85ef42.js.map": "/UMC-React-Study-Chapter3/static/js/main.0f85ef42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ad930cb.css",
+    "static/js/main.0f85ef42.js"
+  ]
+}
