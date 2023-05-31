@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/UMC-React-Study-Chapter8/static/css/main.5ad930cb.css",
-    "main.js": "/UMC-React-Study-Chapter8/static/js/main.4834c9ca.js",
+    "main.css": "/UMC-React-Study-Chapter8/static/css/main.3dc1da25.css",
+    "main.js": "/UMC-React-Study-Chapter8/static/js/main.92bd1f77.js",
     "index.html": "/UMC-React-Study-Chapter8/index.html",
-    "main.5ad930cb.css.map": "/UMC-React-Study-Chapter8/static/css/main.5ad930cb.css.map",
-    "main.4834c9ca.js.map": "/UMC-React-Study-Chapter8/static/js/main.4834c9ca.js.map"
+    "main.3dc1da25.css.map": "/UMC-React-Study-Chapter8/static/css/main.3dc1da25.css.map",
+    "main.92bd1f77.js.map": "/UMC-React-Study-Chapter8/static/js/main.92bd1f77.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ad930cb.css",
-    "static/js/main.4834c9ca.js"
+    "static/css/main.3dc1da25.css",
+    "static/js/main.92bd1f77.js"
   ]
 }
