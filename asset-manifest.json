@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/UMC-React-Study-Chapter3/static/css/main.5ad930cb.css",
-    "main.js": "/UMC-React-Study-Chapter3/static/js/main.4834c9ca.js",
-    "index.html": "/UMC-React-Study-Chapter3/index.html",
-    "main.5ad930cb.css.map": "/UMC-React-Study-Chapter3/static/css/main.5ad930cb.css.map",
-    "main.4834c9ca.js.map": "/UMC-React-Study-Chapter3/static/js/main.4834c9ca.js.map"
+    "main.css": "/UMC-React-Study-Chapter8/static/css/main.5ad930cb.css",
+    "main.js": "/UMC-React-Study-Chapter8/static/js/main.4834c9ca.js",
+    "index.html": "/UMC-React-Study-Chapter8/index.html",
+    "main.5ad930cb.css.map": "/UMC-React-Study-Chapter8/static/css/main.5ad930cb.css.map",
+    "main.4834c9ca.js.map": "/UMC-React-Study-Chapter8/static/js/main.4834c9ca.js.map"
   },
   "entrypoints": [
     "static/css/main.5ad930cb.css",
