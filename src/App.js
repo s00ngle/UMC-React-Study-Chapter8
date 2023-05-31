@@ -7,7 +7,7 @@ const pageNo = 1;
 const numOfRows = 1000;
 const serviceKey = process.env.REACT_APP_API_KEY;
 
-const filterName = "대전";
+const filterName = ""; // 지역 이름 입력
 
 const URL = `https://apis.data.go.kr/B552584/UlfptcaAlarmInqireSvc/getUlfptcaAlarmInfo?year=${year}&pageNo=${pageNo}&numOfRows=${numOfRows}&returnType=json&serviceKey=${serviceKey}`;
 
